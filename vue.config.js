@@ -1,7 +1,6 @@
 module.exports = {
-
+  publicPath: process.env.NODE_ENV === 'production' ? '/nasa-photo-library/' : '/',
   configureWebpack: {
-    publicPath: process.env.NODE_ENV === 'development' ? '/nasa-photo-library/' : '/',
     resolve: {
       alias: {
         'assets': '@/assets',
