@@ -14,7 +14,7 @@ export default {
   name: "About",
   data() {
     return {
-      input: '#### wechat:qws18267334075 email:qianwenshengsec@gmail.com'
+      input: '###### wechat:qws18267334075'
     }
   },
   computed: {

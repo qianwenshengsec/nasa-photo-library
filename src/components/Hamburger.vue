@@ -1,9 +1,7 @@
 <template>
   <div id="hamburger">
     <!-- Home -->
-    <router-link to="/home" class="firstrouter">
-      🙂😅
-    </router-link>
+    <router-link to="/home" class="firstrouter"> 🎈 </router-link>
     <!-- NavList -->
     <teleport to="body">
       <div class="navList" :class="{ navlistshow: iswhether }">
@@ -19,12 +17,15 @@
             </router-link>
           </li>
         </template>
-        <router-link to="/about">
-          <svg class="icon" aria-hidden="true">
+        <li>
+          <router-link to="/about">
+            <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-weixin"></use>
             </svg>
             <span>About</span>
-        </router-link>
+          </router-link>
+        </li>
+
         <li>
           <a href="https://gitee.com/qian-wensheng/static-nasa-vue">
             <svg class="icon" aria-hidden="true">
