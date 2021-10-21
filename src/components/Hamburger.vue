@@ -2,7 +2,7 @@
   <div id="hamburger">
     <!-- Home -->
     <router-link to="/home" class="firstrouter">
-      😃
+      🙂😅
     </router-link>
     <!-- NavList -->
     <teleport to="body">
@@ -19,12 +19,18 @@
             </router-link>
           </li>
         </template>
+        <router-link to="/about">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weixin"></use>
+            </svg>
+            <span>About</span>
+        </router-link>
         <li>
           <a href="https://gitee.com/qian-wensheng/static-nasa-vue">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-github"></use>
             </svg>
-            <span>项目仓库</span>
+            <span>gitee</span>
           </a>
         </li>
         <!-- <li>

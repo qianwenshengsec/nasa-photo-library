@@ -17,7 +17,7 @@ export default {
     this.$nextTick(function () {
       var map = new BMapGL.Map("container"); // 创建地图实例
       var point = new BMapGL.Point(-95.0972, 29.55164); // 创建点坐标
-      map.centerAndZoom(point, 4); // 初始化地图，设置中心点坐标和地图级别
+      map.centerAndZoom(point, 1); // 初始化地图，设置中心点坐标和地图级别
       map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
       // map.setHeading(64.5);   //设置地图旋转角度
       // map.setTilt(73);       //设置地图的倾斜角度
