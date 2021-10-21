@@ -1,4 +1,4 @@
-# static-nasa-vue
+# nasa-photo-library
 
 ## Introduction
 
