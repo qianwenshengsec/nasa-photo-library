@@ -35,8 +35,8 @@
       <label for="solid">sol 火星车火星周期数 不得大于左侧数据max_sol</label>
       <el-input-number v-model="sol" :min="1" :max="MarsOpportunityLatestData.max_sol" />
       <button @click="searchBysol">按火星周期检索</button>
-      <label for="">地球日期 不得大于左侧max_date 也不能早于landing_date</label><br>
-      <div class="block block-p-2">
+      <label for="">按地球日期 不得大于左侧max_date 也不能早于landing_date</label><br>
+      <!-- <div class="block block-p-2">
         <el-date-picker
           v-model="earth_date"
           type="date"
@@ -49,7 +49,8 @@
         >
         </el-date-picker>
         <span class="demonstration" style="color:white;"> 按地球日期选择</span>
-      </div>
+      </div> -->
+      <input type="date" name="" id="" v-model="earth_date">
       <button @click="searchBydate">按地球日期检索</button>
     </div>
     <div class="canclickphoto" @click="show">👇点击图片全屏预览 自动播放</div>

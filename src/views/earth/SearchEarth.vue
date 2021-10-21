@@ -6,7 +6,6 @@
       </aside>
     </teleport>
     <h5>三维地球加载稍慢 长时间不出现请使用Chrome</h5>
-    <h5 class="typo">默认图像2021-09-09:Space Center Houston</h5>
     <!-- 经度 -->
     <hr />
     <label for="lon">输入经度</label>
@@ -132,7 +131,7 @@ aside {
   height: 80px;
   background-color: #55e6c1;
   border-radius: 10px;
-  left: 79.1%;
+  left: 73.8%;
   top: -50%;
   transform: translateX(-50%);
   transition: all 0.3s;

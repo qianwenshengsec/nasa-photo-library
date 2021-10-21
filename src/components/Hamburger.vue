@@ -2,7 +2,7 @@
   <div id="hamburger">
     <!-- Home -->
     <router-link to="/home" class="firstrouter">
-      🏡
+      😃
     </router-link>
     <!-- NavList -->
     <teleport to="body">

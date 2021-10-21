@@ -41,10 +41,10 @@
       <!-- <input type="number" name="" v-model="sol" id="solid" /> -->
       <el-input-number v-model="sol" :min="1" :max="MarsCuriosityLatestData.max_sol" />
       <button @click="searchBysol">按火星日期检索</button>
-      <label for="">地球日期 不得大于左侧max_date 也不能早于landing_date</label><br>
+      <label for="">按地球日期 不得大于左侧max_date 也不能早于landing_date</label><br>
       <!-- <input type="text" name="" v-model="earth_date" id="" /> -->
 
-      <div class="block block-p-2">
+      <!-- <div class="block block-p-2">
         <el-date-picker
           v-model="earth_date"
           type="date"
@@ -57,8 +57,9 @@
         >
         </el-date-picker>
         <span class="demonstration" style="color:white;"> 按地球日期选择</span>
-      </div>
+      </div> -->
 
+      <input type="date" name="" id="" v-model="earth_date">
       <button @click="searchBydate">按地球日期检索</button>
     </div>
     <div class="canclickphoto_1" @click="show">👇点击图片全屏预览 自动播放</div>

@@ -7,15 +7,18 @@
       <strong style="color: red"
         >输入英文关键字 你可以查询任何与太空科技相关的图像;</strong
       >
-      <strong style="color: red">人名 地名 国家名 飞船 卫星 太阳 火星 阿波罗 什么都可以搜 注:多关键字的信息 请用空格隔开</strong>
+      <strong style="color: red"
+        >人名 地名 国家名 飞船 卫星 太阳 火星 阿波罗 什么都可以搜
+        注:多关键字的信息 请用空格隔开</strong
+      >
       <br />
       <label for="que">
-        例如 sun、moon、sky、Donald Trump、China American Armstrong、 Saturn 5、 apollo、 apollo
-        2、 apollo landing、 moon、moon landing、 mars landing、 Spirit rover、
-        Curiosity、 Houston、 Washington、 And so on ...
+        例如 Elon Musk、 sun、moon、Donald Trump、China American 
+        apollo、apollo landing、moon landing、 mars landing、
+        Spirit rover、 Curiosity、 Houston、 Washington、 And so on ...
       </label>
       <strong style="color: red"></strong>
-        <el-input v-model="querystr" placeholder="" clearable />
+      <el-input v-model="querystr" placeholder="" clearable />
       <button class="btn1" @click="clickbtn">点击搜索</button>
     </div>
 
@@ -37,7 +40,7 @@ export default {
   name: "Library",
   data() {
     return {
-      querystr: "Apollo landing",
+      querystr: "Trump",
       media_typex: "image",
       isshow: false,
       errMsg: "",
@@ -45,7 +48,23 @@ export default {
       database: [],
     };
   },
-  computed: {},
+  created() {},
+  mounted() {
+    this.$http({
+      url: this.baseurl,
+      type: "get",
+      params: {
+        q: 'Trump',
+        media_type: this.media_typex,
+      },
+    })
+      .then(({ data }) => {
+        this.database = data.collection.items;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  },
   methods: {
     clearphoto() {
       this.database = [];
@@ -68,14 +87,13 @@ export default {
         .catch((err) => {
           console.log(err);
         });
-      let t6 = setTimeout(() => {
+      this.t6 = setTimeout(() => {
         this.isshow = false;
       }, 2000);
-      t6 = null;
     },
   },
   beforeUnmount() {
-    // this.t6 = null;
+    this.t6 = null;
   },
 };
 </script>
@@ -199,6 +217,6 @@ p {
   z-index: 99999999999999;
 }
 .alertboxshow {
-  top: 50%;
+  top: 230px;
 }
 </style>

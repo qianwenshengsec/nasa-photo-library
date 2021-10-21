@@ -2,6 +2,7 @@
   <div id="earth">
     <div class="leftbox" v-viewer>
       <baidu-map class="baidumapbox"></baidu-map>
+      点击图片全屏预览
       <img src="" alt="" ref="imgbox" />
     </div>
     <div class="rightbox">
@@ -59,7 +60,7 @@ export default {
 .leftbox {
   // display: inline-block;
   float: left;
-  width: 60%;
+  width: 50%;
   padding-top: 20px;
   padding-right: 10px;
   // border-right: 1px solid black;
@@ -67,7 +68,7 @@ export default {
 .rightbox {
   // display: inline-block;
   float: right;
-  width: 40%;
+  width: 50%;
   border-left: 1px solid rgb(108, 106, 106);
   padding-top: 20px;
   padding-left: 9px;

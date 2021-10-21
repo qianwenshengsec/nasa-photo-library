@@ -1,9 +1,6 @@
 <template>
   <div id="baidu-map">
     点击 地球 获取点击位置的经纬度 或手动输入<br>
-    <label for="onedate" style="color: red">
-      ⚠指定检索日期,返回可能与提供的日期不完全匹配。相反，返回最接近提供日期的图像。</label
-    >
     <div id="container"></div>
   </div>
 </template>
@@ -41,7 +38,7 @@ export default {
 
 <style lang="less" scoped>
 #container {
-  height: 400px;
+  height: 300px;
   width: 100%;
   padding-top: 10px;
 }
