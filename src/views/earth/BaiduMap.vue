@@ -4,9 +4,6 @@
     <label for="onedate" style="color: red">
       ⚠指定检索日期,返回可能与提供的日期不完全匹配。相反，返回最接近提供日期的图像。</label
     >
-      <p>
-        此端点检索提供的位置和日期的最近可用图像的日期时间和资源名称。 卫星大约每十六天经过地球上的每个点一次。
-      </p>
     <div id="container"></div>
   </div>
 </template>

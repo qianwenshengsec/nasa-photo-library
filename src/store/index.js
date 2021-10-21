@@ -12,25 +12,25 @@ const moduleA = {
       },
       {
         id:'2',
-        name: "Landsat8 Satellite",
+        name: "Landsat8",
         path: "/earth",
         symbol: '<use xlink:href="#icon-diqiu2"></use>'
       },
       { 
         id:'3',
-        name: "Mars Rover",
+        name: "Rover",
         path: "/mars",
         symbol: '<use xlink:href="#icon-yutuhaoyueqiuche"></use>'
       },
       { 
         id:'4',
-        name: "NASA Library",
+        name: "Library",
         path: "/library",
         symbol: '<use xlink:href="#icon-Nasa"></use>'
       },
       {
         id:'5',
-        name: "Astrophotography",
+        name: "Photography",
         path: "/apod",
         symbol: '<use xlink:href="#icon-tianwenwangyuanjing"></use>'
       },

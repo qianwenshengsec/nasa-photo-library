@@ -2,18 +2,18 @@
   <div id="home">
     <div class="typo">
       <ul>
-        <li><a href="#earth">Landsat 8 陆地资源卫星拍摄图像 检索</a></li>
+        <li><a href="#earth">Landsat 8</a></li>
         <li>
           <a href="#mars"
-            >Curiosity、Opportunity、Spirit Rover 火星车相机 图像检索</a
+            >Curiosity、Opportunity、Spirit Rover</a
           >
         </li>
-        <li><a href="#library">NASA Media Library NASA新闻媒体图像 检索</a></li>
+        <li><a href="#library">NASA Media Library</a></li>
         <li>
-          <a href="#apod">Astronomy Picture of the Day 每日天文图 检索</a>
+          <a href="#apod">Astronomy Picture of the Day</a>
         </li>
         <li>
-          <a href="#asteroids">Near Earth Object Web Service 近地小天体</a>
+          <a href="#asteroids">Near Earth Object Web Service</a>
         </li>
       </ul>
       <p>
@@ -25,7 +25,7 @@
         承载着全人类的梦想踏上了月球表面。<strong
           style="color: red"
           @click="getmsg"
-          >阅读阿波罗登月计划相关信息</strong
+          >阿波罗登月相关信息</strong
         >
         <strong>{{ errMsg }}</strong>
       </p>

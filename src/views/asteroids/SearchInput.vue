@@ -98,8 +98,6 @@ export default {
 
 <style lang="less" scoped>
 
-
-
 .demonstration{
   color: rgb(0, 0, 0) !important;
 }

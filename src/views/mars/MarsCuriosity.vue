@@ -53,6 +53,7 @@
           :shortcuts="shortcuts"
           format="YYYY-MM-DD"
           value-format="YYYY-MM-DD"
+          size="small"
         >
         </el-date-picker>
         <span class="demonstration" style="color:white;"> 按地球日期选择</span>
